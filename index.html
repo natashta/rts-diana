@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диана Корнигор | Личный сайт веб разработчика</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">DK</a>
+
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#home" class="nav__link nav__link--active">Главная</a>
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#skills" class="nav__link">Навыки</a>
+        <a href="#works" class="nav__link">Работы</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <span class="logo">DK</span>
+      <button class="mobile-menu__close" id="menu-close" type="button" aria-label="Закрыть меню">&times;</button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Мобильное меню">
+      <a href="#home" class="btn-white">Главная</a>
+      <a href="#about" class="btn-white">Обо мне</a>
+      <a href="#skills" class="btn-white">Навыки</a>
+      <a href="#works" class="btn-white">Работы</a>
+      <a href="#reviews" class="btn-white">Отзывы</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- Главная -->
+    <section class="section hero" id="home">
+      <div class="container">
+        <div class="window hero__window">
+          <div class="window__bar"><i></i><i></i><i></i></div>
+          <div class="hero__content">
+            <h1 class="hero__title">Диана Корнигор</h1>
+            <p class="hero__subtitle">личный сайт веб разработчика</p>
+          </div>
+        </div>
+        <a href="#about" class="btn-lime">Подробнее</a>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">Обо мне</h2>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>Меня зовут Диана. Я занимаюсь разработкой современных сайтов и приложений.</p>
+            <p>Мне нравится создавать интересные и современные проекты.</p>
+            <a href="#skills" class="btn-lime">Мои навыки</a>
+          </div>
+
+          <div class="window about__card">
+            <div class="window__bar"><i></i><i></i><i></i></div>
+            <div class="about__card-body">
+              <img src="./images/person1.png" alt="Фото Дианы" class="photo">
+              <p><b>Где живу:</b> <span>Мехико сити</span></p>
+              <p><b>Возраст:</b> <span>24</span></p>
+              <p><b>Дата рождения:</b> <span>1999</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title">Навыки</h2>
+
+        <div class="window skills__window">
+          <div class="window__bar"><i></i><i></i><i></i></div>
+          <div class="skills__body">
+            <p class="skills__text">Этот сайт я сделала в рамках обучения школы<br>Rocket Tech School</p>
+            <ul class="skills__list">
+              <li class="skill skill--html"><img src="./images/html.png" alt="HTML"></li>
+              <li class="skill skill--css"><img src="./images/css.png" alt="CSS"></li>
+              <li class="skill skill--js"><img src="./images/js.png" alt="JavaScript"></li>
+            </ul>
+            <a href="#works" class="btn-lime">Смотреть работы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Работы -->
+    <section class="section works" id="works">
+      <div class="container">
+        <h2 class="section__title">Работы</h2>
+
+        <ul class="works__list">
+          <li class="works__item"><a href="#" class="work" aria-label="Работа 1: блог"><img src="./images/work1.png" alt="Работа 1: блог" srcset=""></a></li>
+          <li class="works__item"><a href="#" class="work" aria-label="Работа 2: Minecraft"><img src="./images/work2.png" alt="Работа 2: Minecraft" srcset=""></a></li>
+          <li class="works__item"><a href="#" class="work" aria-label="Работа 3: игровой портал"><img src="./images/work3.png" alt="Работа 3: игровой портал" srcset=""></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+
+        <div class="reviews__list">
+          <article class="review">
+            <div class="window review__card">
+              <div class="window__bar"><i></i><i></i><i></i></div>
+              <div class="review__body">
+                <img src="./images/person2.png" alt="Фото Владимира" class="photo photo--small">
+                <p class="review__name">Владимир</p>
+                <p class="review__role">Основатель Rocket Tech School</p>
+              </div>
+            </div>
+            <blockquote class="bubble">Эта девочка проходила обучение веб разработке 4 месяца, и уже создает сложные сайты!</blockquote>
+          </article>
+
+          <article class="review">
+            <div class="window review__card">
+              <div class="window__bar"><i></i><i></i><i></i></div>
+              <div class="review__body">
+                <img src="./images/person3.png" alt="Фото Дианы" class="photo photo--small">
+                <p class="review__name">Диана</p>
+                <p class="review__role">Product Lead Rocket Tech School</p>
+              </div>
+            </div>
+            <blockquote class="bubble">Очень хорошо пишет код. Отличная оптимизация сайта. Современно, стильно, молодёжно!</blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__about">
+        <p class="footer__name">Диана Корнигор</p>
+        <p>Личный сайт веб разработчика</p>
+      </div>
+      <p class="footer__copy">(c) 2023</p>
+      <ul class="socials">
+        <li><a href="#" aria-label="Telegram"><img src="./images/icon1.svg" alt="Discord"></a></li>
+        <li><a href="#" aria-label="GitHub"><img src="./images/icon2.svg" alt="Fb"></a></li>
+        <li><a href="#" aria-label="Behance"><img src="./images/icon3.svg" alt="Instagram"></a></li>
+        <li><a href="#" aria-label="Почта"><img src="./images/icon4.svg" alt="Telegram"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
